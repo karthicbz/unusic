@@ -1,8 +1,12 @@
 const UserInputs = ({getSongDownloadLinks, inputText, changeInput})=>{
     return(
-        <div>
-            <input type="text" value={inputText.replace(' ', '+')} onChange={changeInput}/>
-            <button onClick={getSongDownloadLinks}>Search</button>
+        <div className="input-fields">
+            <input 
+            type="text" 
+            value={inputText.replace(' ', '+')} 
+            onChange={changeInput}
+            className="search-input"/>
+            <button onClick={getSongDownloadLinks} className="search-button">Search</button>
         </div>
     )
 }

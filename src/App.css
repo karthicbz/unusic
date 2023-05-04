@@ -1,4 +1,84 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.input-fields{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-input{
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50px;
+  border-color: rgb(116, 116, 243);
+  color: gray;
+}
+
+.search-button{
+  font-size: 1.2rem;
+  border-radius: 50px;
+  padding: 0px 10px;
+  border: none;
+  background-color: rgb(116, 116, 243);
+  color: white;
+}
+
+.search-button:hover{
+  cursor: pointer;
+}
+
+.search-button:active{
+  transform: scale(0.9);
+
+}
+
+.fetched-song-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.fetched-song-list>div{
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  /* justify-content: center; */
+  width: 300px;
+  /* gap: 1rem; */
+  box-shadow: 1px 1px 10px 1px rgb(200, 199, 199);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.fetched-song-list>div>img{
+  margin-bottom: auto;
+}
+
+.song-info>p{
+  font-size: 1.2rem;
+  margin: 8px 0px;
+}
+
+.song-info>a{
+  border: 1px solid rgb(10, 65, 204);
+  padding: 0.5rem;
+  text-decoration: none;
+  background-color: rgb(116, 116, 243);
+  color: white;
+  margin: 8px 0px;
+}
+
+.song-info>a:active{
+  transform: scale(0.9);
+}
