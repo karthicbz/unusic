@@ -15,7 +15,6 @@ body{
 .App {
   text-align: center;
   padding: 2rem;
-  /* height: 100vh; */
 }
 
 .input-fields{
@@ -51,11 +50,6 @@ body{
 }
 
 .fetched-song-list{
-  /* display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  padding: 2rem; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
   grid-template-rows: repeat(2, 1fr);

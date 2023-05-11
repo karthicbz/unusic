@@ -8,11 +8,7 @@ const SongDetailsList = ({songDetails})=>{
                     <div className="song-info">
                         <p>Name: {details.album.name}</p>
                         <p>Duration: {(parseInt(details.duration)/60).toFixed(2)}</p>
-                        {/* <button type="submit" onClick={window.open(details.downloadUrl[4].link)}>Download</button> */}
                         <a href={details.downloadUrl[4].link} download='song' target="_blank" rel="noopener noreferrer">Download</a>
-                        {/* <form method="get" action={details.downloadUrl[4].link}>
-                            <button type="submit">Download</button>
-                        </form> */}
                     </div>
                 </div>)
             })} 

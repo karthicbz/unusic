@@ -16,7 +16,6 @@ function App() {
     const url = `https://saavn.me/search/songs?query=${inputText}&page=1&limit=10`;
     const songs = fetchSongs(url);
     songs.then(songDetails=>{
-      // console.log(songDetails);
       setDetails(songDetails);
     }).catch(err=>{
       console.log(err);
